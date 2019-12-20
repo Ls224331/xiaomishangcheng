@@ -15,7 +15,11 @@
 <style>
 	/*每个页面公共css */
 	@import "/common/uni.css";
+	/* 动画库 */
 	@import "/common/animate.css";
 	@import "/common/icon.css";
+	/* 公共样式 */
 	@import "/common/common.css";
+	/* ui基础库 */
+	@import "/common/zcm-main.css";
 </style>
