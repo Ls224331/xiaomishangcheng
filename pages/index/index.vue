@@ -11,30 +11,43 @@
 		
 		<divider></divider>
 		<!-- 基础卡片组件 -->
-		<view class="card">
-			<!-- 标题 -->
-			<view class="font-md font-weight p-2 border-bottom main-border-color">每日精选</view>
-			<!--  body-->
-			<view class="">
-				<image src="/static/images/demo/demo4.jpg" mode="widthFix" ></image>
+		<card  headTitle="每日精选" bodyCover="/static/images/demo/demo4.jpg"></card>
+		
+		<!-- 公共列表组件 750-5=745/2=372.5 -->
+		<view class="row">
+			<view style="width:372.5rpx;" class="">
+				<image src="../../static/images/demo/list/1.jpg" mode="widthFix" lazy-load></image>
+				<view class="p-2 pt-1">
+					<view class="font-md">米家空调</view>
+					<text class="d-block font text-light-muted">1.5匹变频</text>
+					<view class="d-flex my-1">
+						<view class="d-flex main-text-color font-md line-h">
+							<text class="a-self-start font-sm" style="">￥</text>1366
+						</view>
+						<view class="font-sm text-light-muted line-through ml-1 line-h" style="align-content: flex-end ;">￥2699</view>
+					</view>
+				</view>
+				
 			</view>
 		</view>
-		
-		
-		
+		<view style="height:100rpx;"></view>
 	</view>  
+	
 </template>
 
 <script>
 	import swiperImage from "@/components/index/swiper-image.vue"
 	import indexNav from "@/components/index/index-nav.vue"
 	import threeAdv from "@/components/index/three-adv.vue"
+	import card from "@/components/common/card.vue"
+	
 	
 	export default {
 		components:{
 			swiperImage,
 			indexNav,
-			threeAdv
+			threeAdv,
+			card
 		},
 		data() {
 			return {
