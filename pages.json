@@ -61,7 +61,7 @@
 		"navigationBarTitleText": "小米商城",
 		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#FFFFFF"
-	},
+	}, 
 	// 底部导航
 	"tabBar":{
 		"color":"#B1B1B1",
